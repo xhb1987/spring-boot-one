@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.gateway.GatewayApplication",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Discovery",
+            "request": "launch",
+            "mainClass": "com.example.discovery.Discovery",
+            "projectName": "discovery"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Configuration",
+            "request": "launch",
+            "mainClass": "com.example.config.Configuration",
+            "projectName": "config"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Configuration",
+            "request": "launch",
+            "mainClass": "src.main.java.com.example.config.Configuration",
+            "projectName": "spring-boot-one_b1daee69"
+        }
+    ]
+}
