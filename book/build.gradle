@@ -24,6 +24,10 @@ dependencies {
 	implementation 'org.mongodb:bson'
 	implementation 'org.springframework.data:spring-data-commons'
 	implementation 'org.springframework.data:spring-data-mongodb'
+	implementation 'org.springframework.session:spring-session'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.session:spring-session'
+	implementation 'org.springframework.session:spring-session-data-redis'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
