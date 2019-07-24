@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - UserApplication",
+            "request": "launch",
+            "mainClass": "com.example.user.UserApplication",
+            "projectName": "user"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GatewayApplication",
             "request": "launch",
             "mainClass": "com.example.gateway.GatewayApplication",
