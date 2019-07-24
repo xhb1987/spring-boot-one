@@ -27,6 +27,16 @@
             "request": "launch",
             "mainClass": "src.main.java.com.example.config.Configuration",
             "projectName": "spring-boot-one_b1daee69"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BookApplication<book>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.book.BookApplication",
+            "projectName": "book",
+            "args": ""
         }
     ]
 }

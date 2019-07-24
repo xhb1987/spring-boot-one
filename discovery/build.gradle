@@ -18,10 +18,10 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
-	implementation 'org.springframework.cloud:spring-cloud-starter-security'
+	// implementation 'org.springframework.cloud:spring-cloud-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation "javax.xml.bind:jaxb-api"
     implementation "com.sun.xml.bind:jaxb-core"
@@ -29,7 +29,7 @@ dependencies {
     implementation "javax.activation:activation"
 	implementation "org.glassfish.jaxb:jaxb-runtime"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
+	// testImplementation 'org.springframework.security:spring-security-test'
 }
 
 dependencyManagement {
