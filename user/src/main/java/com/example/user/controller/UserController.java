@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/auth")
 public class UserController {
     @Autowired
     private UserRepository repository;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     public List<User> getAllUsers() {
         List<User> users = repository.findAll();
         return users;
