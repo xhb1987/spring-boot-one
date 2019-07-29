@@ -5,7 +5,7 @@ plugins {
 
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.example'
+group = 'user'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
@@ -30,6 +30,11 @@ dependencies {
     implementation "com.sun.xml.bind:jaxb-core"
     implementation "com.sun.xml.bind:jaxb-impl"
     implementation "javax.activation:activation"
+	implementation 'org.springframework.session:spring-session'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.session:spring-session'
+	implementation 'org.springframework.session:spring-session-data-redis'
+	implementation project(':common')
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 }

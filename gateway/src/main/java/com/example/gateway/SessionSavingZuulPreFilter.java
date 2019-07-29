@@ -24,8 +24,9 @@ public class SessionSavingZuulPreFilter extends ZuulFilter {
     public Object run() {
         RequestContext context = RequestContext.getCurrentContext();
         HttpSession httpSession = context.getRequest().getSession();
-
+        
         context.addZuulRequestHeader("Cookie", "SESSION=" + httpSession.getId());
+        System.out.println(httpSession.getId());
         return null;
     }
 
@@ -36,6 +37,6 @@ public class SessionSavingZuulPreFilter extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return 0;
+        return 1;
     }
 }

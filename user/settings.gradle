@@ -3,4 +3,6 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'user'
+rootProject.name = 'com.example'
+include ':common'
+project(':common').projectDir = file('../common')

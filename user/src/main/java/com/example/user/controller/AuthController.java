@@ -6,6 +6,7 @@ import java.util.Map;
 import static org.springframework.http.ResponseEntity.ok;
 
 import com.example.user.config.JwtTokenProvider;
+import com.example.user.model.User;
 import com.example.user.repository.UserRepository;
 import com.example.user.service.CustomeUserDetailService;
 
@@ -36,8 +37,9 @@ public class AuthController {
     public ResponseEntity login(@RequestBody AuthBody data) {
         try {
             String username = data.getName();
-            
-            // authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, data.getPassword()));
+
+            // authenticationManager.authenticate(new
+            // UsernamePasswordAuthenticationToken(username, data.getPassword()));
             String token = jwtTokenProvider.createToken(username, this.users.findByName(username).getRole());
             Map<Object, Object> model = new HashMap();
             model.put("username", username);
@@ -46,5 +48,11 @@ public class AuthController {
         } catch (AuthenticationException e) {
             throw new BadCredentialsException("Invalid email password");
         }
+    }
+
+    @PostMapping("/register")
+    public String register(@RequestBody User user) {
+        userService.saveUser(user);
+        return "ok";
     }
 }

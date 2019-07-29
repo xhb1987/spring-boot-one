@@ -2,6 +2,7 @@ package com.example.user.config;
 
 import java.util.Base64;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.Set;
 
 import javax.annotation.PostConstruct;
@@ -45,7 +46,7 @@ public class JwtTokenProvider {
 
     public String createToken(String username, Set<Role> set) {
         Claims claims = Jwts.claims().setSubject(username);
-        // claims.put("roles", set);
+        claims.put("roles", set);
 
         Date now = new Date();
         Date validity = new Date(now.getTime() + validityInMilliseconds);
@@ -62,6 +63,11 @@ public class JwtTokenProvider {
         String bearerToken = req.getHeader("Authorization");
         if (bearerToken != null && bearerToken.startsWith("Bearer")) {
             return bearerToken.substring(7, bearerToken.length());
+        }
+
+        Enumeration<String> headerName = req.getHeaderNames();
+        while(headerName.hasMoreElements()) {
+            System.out.println("Headers: " + req.getHeader(headerName.nextElement()) );
         }
 
         return null;
