@@ -12,7 +12,6 @@ import com.example.user.repository.RoleRepository;
 // import com.example.user.repository.RoleRepository;
 import com.example.user.repository.UserRepository;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

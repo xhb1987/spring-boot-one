@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="config.main" target="1.8" />
+      <module name="config.test" target="1.8" />
+      <module name="spring-boot-one.common.main" target="1.8" />
+      <module name="spring-boot-one.common.test" target="1.8" />
+      <module name="spring-boot-one.main" target="1.8" />
+      <module name="spring-boot-one.test" target="1.8" />
+      <module name="spring-boot-one.user.main" target="1.8" />
+      <module name="spring-boot-one.user.test" target="1.8" />
+      <module name="user.com.example.user.main" target="1.8" />
+      <module name="user.com.example.user.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

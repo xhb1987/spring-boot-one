@@ -14,3 +14,12 @@ project(':common').projectDir = file('./common')
 
 include ':user'
 project(':user').projectDir = file('./user')
+
+include ':config'
+project(':config').projectDir = file('./config')
+
+include ':discovery'
+project(':discovery').projectDir = file('./discovery')
+
+include ':gateway'
+project(':gateway').projectDir = file('./gateway')
